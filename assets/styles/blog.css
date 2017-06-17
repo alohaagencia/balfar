@@ -1,0 +1,190 @@
+.page-header {
+  margin: 0;
+  background: url("../images/page-title.jpg") center no-repeat;
+  background-size: cover;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.breadcrumb {
+  margin: 0 auto;
+  padding: 50px 0;
+  background: transparent;
+}
+.breadcrumb li a,
+.breadcrumb .active {
+  font-size: 1.2em;
+  color: #0b355f;
+}
+.breadcrumb .active {
+  font-weight: bold;
+}
+.pagination {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+.pagination span {
+  font-size: 2em;
+  color: #205790;
+}
+.pagination li > a,
+.pagination li:hover > a {
+  border: none;
+  color: #999;
+  font-weight: 700;
+  font-size: 1.5em;
+  background: transparent;
+}
+.pagination li.active a,
+.pagination li.active:hover a {
+  font-weight: bold;
+  background: transparent;
+  color: #205790;
+}
+.media {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .media {
+    padding: 0 15px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.media:hover .media-left::before {
+  opacity: 1;
+  visibility: visible;
+}
+.media-left {
+  position: relative;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .media-left {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+.media-left img {
+  display: block;
+  max-width: 150px;
+}
+.media-left::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(32,87,144,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 600px) {
+  .media-body {
+    width: 100%;
+  }
+}
+.media-body time {
+  color: #999;
+  text-transform: uppercase;
+}
+.media-body p {
+  color: #444;
+  font-size: 1.1em;
+}
+.media-title {
+  line-height: 1.5;
+}
+.blog {
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .blog h3 {
+    text-align: center;
+  }
+}
+.blog h3 {
+  margin: 0 0 25px;
+  font-weight: 700;
+  color: #205790;
+}
+.popular {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: url("../images/page-title.jpg") center no-repeat;
+  background-size: cover;
+}
+.popular a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular a > div {
+  padding: 10px;
+  padding-bottom: 5px;
+  display: block;
+  text-align: center;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+.popular a > div h4,
+.popular a > div small {
+  line-height: 0.7;
+  color: #fff;
+}
+.popular a > div h4 {
+  margin: 0;
+  font-size: 2em;
+}
+.popular a > div small {
+  text-transform: lowercase;
+}
+.popular p {
+  margin: 0;
+  margin-left: 10px;
+  color: #fff;
+}
+.news-search {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+.news-search input {
+  width: calc(100% - 35px);
+  border: none;
+  background-color: none;
+}
+.news-search button {
+  border: none;
+  background-color: transparent;
+  color: #666;
+  font-size: 1.2em;
+}
+.news-banner {
+  width: 100%;
+  display: block;
+}
+.news-banner img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=blog.css.map */

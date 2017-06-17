@@ -1,0 +1,186 @@
+.page-header {
+  margin: 0;
+  background: url("../images/page-title.jpg") center no-repeat;
+  background-size: cover;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.cart {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.table {
+  border: 1px solid #ddd;
+  strong: ,;
+}
+.table > thead > tr > th {
+  border: none;
+  color: #205790;
+}
+.table > tbody > tr > td {
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+}
+.table figure {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table img {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.table a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #444;
+  font-size: 1.2em;
+}
+.table small {
+  display: block;
+}
+.table p {
+  margin: 0;
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #555;
+  font-size: 1.2em;
+  text-align: center;
+}
+.product-quantities {
+  text-align: center;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.product-quantities button {
+  display: inline-block;
+}
+.product-quantities input {
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.product-quantities button {
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  color: #bcbcbc;
+  border: none;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+.product-quantities button span {
+  font-size: 1.5em;
+}
+.product-quantities button:hover {
+  color: #205790;
+}
+.remove-item {
+  text-align: center;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+.product-remove {
+  color: #ccc;
+  font-size: 1.7em;
+  border: none;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+.product-remove:hover {
+  color: #ff6347;
+}
+.cart-total {
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  text-align: center;
+  color: #205790;
+}
+@media screen and (min-width: 768px) {
+  .cart-total {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cart-end {
+    text-align: center;
+  }
+}
+.cart-end a {
+  font-size: 1.2em;
+  color: #205790;
+}
+@media screen and (min-width: 768px) {
+  .cart-end a {
+    margin-right: 15px;
+  }
+}
+.cart-end button {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-color: #ff9e0f;
+  background-color: #ff9e0f;
+  transition: all 0.2s;
+}
+.cart-end button:hover {
+  border-color: #e68900;
+  background-color: #e68900;
+}
+.empty-cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.empty-cart span {
+  margin-bottom: 15px;
+  font-size: 12em;
+  color: #316499;
+}
+.empty-cart p {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.2em;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.done-text {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.done-text p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  border: none;
+}
+.done-text a {
+  font-size: 1.3em;
+  color: #0b355f;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=cart.css.map */

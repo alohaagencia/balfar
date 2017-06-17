@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="theme-color" content="#205790"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Boost boilerplate"/>
+
+  <title>Balfar Solar</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/components/remodal/dist/remodal.css">
+  <link rel="stylesheet" href="assets/components/remodal/dist/remodal-default-theme.css">
+  <link rel="stylesheet" href="assets/styles/app.css">
+  <link rel="stylesheet" href="assets/styles/home.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+      Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+  <![endif]-->
+
+  <header class="main-header">
+    <div class="header-superior hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="header-users col-sm-10">
+            <a href="#">Cadastre-se</a>
+          </div><!-- /.header-users -->
+
+          <div class="header-social col-sm-2 text-right">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+          </div><!-- /.header-social -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.header-superior -->
+
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".collapse">
+            <span class="fa fa-bars"></span>
+          </button>
+
+          <a class="navbar-brand">
+            <img class="hidden-xs" src="assets/images/logo.png" alt="Balfar Solar">
+            <img class="visible-xs" src="assets/images/logo-white.png" alt="Balfar Solar">
+          </a>
+
+          <a class="navbar-cart visible-xs" href="#"><span class="fa fa-shopping-cart"></span></a>
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#modal">Calcule sua energia</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="navbar-meta">
+              <a class="item-cart" href="#"><span class="fa fa-shopping-cart"></span></a>
+              <a class="item-search" href="#"><span class="fa fa-search"></span></a>
+            </li>
+          </ul><!-- /.nav navbar-nav -->
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.navbar navbar-default -->
+  </header><!-- /.main-header -->
+
+  <main class="main-content" role="main">
+    <section class="banner">
+      <div class="banner-list">
+        <div class="banner-item" style="background-image: url('assets/images/banner.jpg')">
+          <div class="banner-text">
+            <div class="container">
+              <p>Painel solar fabricado com alta tecnologia, <strong>gera mais tecnologia</strong></p>
+              <a class="banner-button" href="#">Saiba Mais</a>
+            </div><!-- /.container -->
+          </div><!-- /.banner-text -->
+        </div><!-- /.banner-item -->
+
+        <div class="banner-item" style="background-image: url('assets/images/banner.jpg')">
+          <div class="banner-text text-center">
+            <div class="container">
+              <p>Painel solar fabricado com alta tecnologia, <strong>gera mais tecnologia</strong></p>
+              <a class="banner-button" href="#">Saiba Mais</a>
+            </div><!-- /.container -->
+          </div><!-- /.banner-text -->
+        </div><!-- /.banner-item -->
+
+        <div class="banner-item" style="background-image: url('assets/images/banner.jpg')">
+          <div class="banner-text text-right">
+            <div class="container">
+              <p>Painel solar fabricado com alta tecnologia, <strong>gera mais tecnologia</strong></p>
+              <a class="banner-button" href="#">Saiba Mais</a>
+            </div><!-- /.container -->
+          </div><!-- /.banner-text -->
+        </div><!-- /.banner-item -->
+      </div><!-- /.banner-list -->
+
+      <button class="banner-scroll">
+        role para baixo
+        <span class="fa fa-angle-down"></span>
+      </button>
+    </section><!-- /.banner -->
+
+    <section class="why content">
+      <h2>Porque optar por <strong>energia solar</strong>?</h2>
+
+      <div class="container">
+        <button class="why-controls prev"><span class="fa fa-angle-left"></span></button>
+        <div class="why-carousel">
+          <div class="item">
+            <img src="assets/images/sustentavel.png" alt="Sustentável">
+
+            <div class="item-text" style="border-color: #0b355f">
+              <h5>Sustentável</h5>
+              <p>A energia solar não polui durante o uso.</p>
+            </div><!-- /.item-text -->
+          </div><!-- /.div-item -->
+
+          <div class="item">
+            <img src="assets/images/manutencao.png" alt="Sustentável">
+
+            <div class="item-text" style="border-color: #205790">
+              <h5>Pouca Manutenção</h5>
+              <p>As centrais necessitam de manutenção minima.</p>
+            </div><!-- /.item-text -->
+          </div><!-- /.div-item -->
+
+          <div class="item">
+            <img src="assets/images/economico.png" alt="Sustentável">
+
+            <div class="item-text" style="border-color: #316499">
+              <h5>Econômico</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eligendi.</p>
+            </div><!-- /.item-text -->
+          </div><!-- /.div-item -->
+
+          <div class="item">
+            <img src="assets/images/viavel.png" alt="Sustentável">
+
+            <div class="item-text" style="border-color: #529bea">
+              <h5>Sustentável</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div><!-- /.item-text -->
+          </div><!-- /.div-item -->
+
+          <div class="item">
+            <img src="assets/images/acessivel.png" alt="Sustentável">
+
+            <div class="item-text" style="border-color: #3489e6">
+              <h5>Sustentável</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil delectus aspernatur culpa sapiente, sed.</p>
+            </div><!-- /.item-text -->
+          </div><!-- /.div-item -->
+        </div><!-- /.why-carousel -->
+        <button class="why-controls next"><span class="fa fa-angle-right"></span></button>
+      </div><!-- /.container -->
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-resume col-sm-6">
+          <h2>Quem Somos</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quibusdam consequatur, eveniet a repellat dolore illo itaque deserunt eum molestiae. Nemo culpa fugiat, qui sunt!
+          </p>
+
+          <a class="about-more" href="#">+</a>
+        </div><!-- /.about-resume -->
+      </div><!-- /.container -->
+
+      <div class="about-video hidden-xs">
+        <iframe src="https://www.youtube.com/embed/z08Ti0JjBls" frameborder="0" controls="2" iv_load_policy="3" modestbranding="1" rel="0" showinfo="0" allowfullscreen></iframe>
+      </div><!-- /.about-video -->
+    </section><!-- /.about -->
+
+    <section class="products-carousel">
+      <h2>Nosso <strong>Produtos</strong></h2>
+
+      <div class="container">
+        <div class="row">
+          <button class="products-control prev col-xs-1"><span class="fa fa-angle-left"></span></button>
+          <div class="products-list">
+            <div class="product-carousel-item">
+              <figure>
+                <img src="assets/images/produto.jpg" alt="Nome do produto">
+              </figure>
+              <div class="product-slug">
+                <a href="#"><strong>Nome do produto</strong></a>
+              </div><!-- /.product-slug -->
+            </div><!-- /.product-carousel-item -->
+
+            <div class="product-carousel-item">
+              <figure>
+                <img src="assets/images/produto.jpg" alt="Nome do produto">
+              </figure>
+              <div class="product-slug">
+                <a href="#"><strong>Nome do produto</strong></a>
+              </div><!-- /.product-slug -->
+            </div><!-- /.product-carousel-item -->
+
+            <div class="product-carousel-item">
+              <figure>
+                <img src="assets/images/produto.jpg" alt="Nome do produto">
+              </figure>
+              <div class="product-slug">
+                <a href="#"><strong>Nome do produto</strong></a>
+              </div><!-- /.product-slug -->
+            </div><!-- /.product-carousel-item -->
+
+            <div class="product-carousel-item">
+              <figure>
+                <img src="assets/images/produto.jpg" alt="Nome do produto">
+              </figure>
+              <div class="product-slug">
+                <a href="#"><strong>Nome do produto</strong></a>
+              </div><!-- /.product-slug -->
+            </div><!-- /.product-carousel-item -->
+          </div><!-- /.col-sm-10 -->
+          <button class="products-control next col-xs-1"><span class="fa fa-angle-right"></span></button>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="btn-row col-sm-10 col-sm-offset-1 text-right">
+            <a class="products-all btn btn-warning" href="#">ver todos</a>
+          </div><!-- /.col-sm-2 col-sm-offset-10 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+
+    <section class="home-clients container-fluid hidden-xs">
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+      <a href="#"><img src="assets/images/cliente.png" alt="Cliente"></a>
+    </section>
+
+    <section class="testimonials hidden-xs">
+      <div class="container">
+        <div class="testimonials-list">
+          <div class="testimony">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ducimus, unde. Quis quas tenetur odit ea beatae ab temporibus fugiat, obcaecati at architecto harum fugit impedit autem molestias ad non necessitatibus qui nisi, soluta expedita magni omnis deleniti dolor. Cumque."</p>
+            <strong>Jhon Doe</strong>
+          </div><!-- /.testimony -->
+
+          <div class="testimony">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ducimus, unde. Quis quas tenetur odit ea beatae ab temporibus fugiat, obcaecati at architecto harum fugit impedit autem molestias ad non necessitatibus qui nisi, soluta expedita magni omnis deleniti dolor. Cumque."</p>
+            <strong>Jhon Doe</strong>
+          </div><!-- /.testimony -->
+
+          <div class="testimony">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ducimus, unde. Quis quas tenetur odit ea beatae ab temporibus fugiat, obcaecati at architecto harum fugit impedit autem molestias ad non necessitatibus qui nisi, soluta expedita magni omnis deleniti dolor. Cumque."</p>
+            <strong>Jhon Doe</strong>
+          </div><!-- /.testimony -->
+        </div><!-- /.testimonials-list -->
+      </div><!-- /.container -->
+    </section><!-- /.testimony -->
+
+    <section class="home-blog hidden-xs">
+      <h2 class="title text-center text-uppercase">Blog</h2><!-- /.title text-center -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#">
+              <div class="news" style="background-image: url('assets/images/banner.jpg')">
+                <div class="news-meta">
+                  <div class="news-title">
+                    <div class="news-date">
+                      <p>03</p>
+                      <small>jan</small>
+                    </div><!-- /.news-date -->
+                    <h4>Another Amaze title maybe</h4>
+                  </div><!-- /.news-title -->
+
+                  <p class="news-resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, odio? Eligendi molestias inventore facere nulla odit eaque accusantium veniam voluptas!
+                  </p>
+
+                  <span class="news-go">+</span>
+                </div><!-- /.news-meta -->
+              </div><!-- /.news -->
+            </a>
+          </div><!-- /.col-sm-6 -->
+
+          <div class="col-sm-6">
+            <a href="#">
+              <div class="news half" style="background-image: url('assets/images/banner.jpg')">
+                <div class="news-meta">
+                  <div class="news-title">
+                    <div class="news-date">
+                      <p>03</p>
+                      <small>jan</small>
+                    </div><!-- /.news-date -->
+                    <h4>Another Amaze title maybe</h4>
+                  </div><!-- /.news-title -->
+
+
+                  <p class="news-resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, odio? Eligendi molestias inventore facere nulla odit eaque accusantium veniam voluptas!
+                  </p>
+                </div>
+              </div><!-- /.news -->
+            </a>
+
+            <a href="#">
+              <div class="news half" style="background-image: url('assets/images/banner.jpg')">
+                <div class="news-meta">
+                  <div class="news-title">
+                    <div class="news-date">
+                      <p>03</p>
+                      <small>jan</small>
+                    </div><!-- /.news-date -->
+                    <h4>Another Amaze title maybe</h4>
+                  </div><!-- /.news-title -->
+
+                  <p class="news-resume">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, odio? Eligendi molestias inventore facere nulla odit eaque accusantium veniam voluptas!
+                  </p>
+                </div>
+              </div><!-- /.news -->
+            </a>
+          </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+  </main><!-- /.main-content -->
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="col-sm-2">
+        <div class="footer-logo">
+          <a class="logo" href="#">
+            <img src="assets/images/logo-white.png" alt="Balfar Solar">
+          </a>
+          <div class="footer-social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+          </div><!-- /.footer-social -->
+        </div><!-- /.footer-logo -->
+      </div><!-- /.col-sm-2 -->
+
+      <div class="col-sm-3">
+        <nav class="footer-navigation">
+          <a href="#">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Produtos</a>
+          <a href="#">Dúvidas</a>
+          <a href="#">Calcule sua energia</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
+        </nav><!-- /.footer-navigation -->
+      </div><!-- /.col-sm-2 -->
+
+      <div class="col-sm-7 text-right">
+        <div class="footer-meta">
+          <div class="footer-contact pull-right">
+            <p class="text-uppercase">Br 376 KM 109 S/N, Paranvaí, PR, Brasil</p>
+            <p class="footer-phone"><a href="#" class="footer-contact"><small>+55 44</small> 3029-3655</a></p>
+          </div><!-- /.addr-box -->
+          <form action="" class="footer-newsletter">
+            <label>Cadastre-se na nossa newsletter</label>
+            <div class="form-inline">
+              <input class="form-control input-newsletter" type="email" />
+              <button class="btn btn-warning" type="submit">enviar</button>
+            </div><!-- /.form-group -->
+          </form><!-- /.footer-newsletter -->
+        </div><!-- /.footer-meta -->
+      </div><!-- /.col-sm-7 -->
+    </div><!-- /.container -->
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; <span>Balfar Solar</span> - Todos os direitos reservados</p>
+        <a class="brand" href="//alohaagencia.com.br" target="_blank">AloHa</a>
+      </div><!-- /.container -->
+    </div><!-- /.copyright -->
+  </footer>
+
+  <div class="search-mask">
+    <section class="search">
+      <div class="container">
+        <form action="#" class="search-form">
+          <input class="search-input" placeholder="O que você está procurando?" />
+          <button class="search-close"><span>&times;</span></button>
+        </form><!-- /.search-form -->
+
+        <div class="search-results">
+          <ul class="search-list">
+            <li class="title"><strong>Produto</strong></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+
+            <li class="title"><strong>Produto</strong></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+          </ul>
+        </div><!-- /.search-results -->
+      </div><!-- /.container -->
+    </section><!-- /.search -->
+  </div>
+
+  <!-- MODAL DE ENERGIA -->
+  <div class="remodal" data-remodal-id="modal">
+    <div class="md-header">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h1 class="text-center text-upeprcase">Calcule sua energia</h1>
+    </div>
+
+    <form action="">
+      <input class="modal-ctrl" id="scene-1" type="radio" name="modal-ctrl" checked hidden>
+      <div class="md-content">
+        <div class="input-group">
+          <label>Qual o consumo elétrico <strong>neste mês?</strong></label>
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <span class="btn btn-default">KW/h</span>
+          </span>
+        </div>
+
+        <div class="input-group">
+          <label>Quanto custou sua conta de luz <strong>neste mês?</strong></label>
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <span class="btn btn-default">R$</span>
+          </span>
+        </div>
+
+        <label class="btn btn-warning" for="scene-2">Próximo</label>
+      </div>
+
+      <input class="modal-ctrl" id="scene-2" type="radio" name="modal-ctrl" hidden>
+      <div class="md-content">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label>Nome:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Telefone:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>E-mail:</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Cidade:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label class="full">Tipo de fatura:</label>
+            <label class="radio-inline">
+              <input type="radio" name="fatura" value="residencial">
+              <span>Residencial</span>
+            </label>
+
+            <label class="radio-inline">
+              <input type="radio" name="fatura" value="empresarial">
+              <span>Empresarial</span>
+            </label>
+          </div>
+
+          <div class="form-group form-upload col-sm-12">
+            <input id="files" type="file" hidden>
+            <label for="files" class="input-replacement">
+              <small>Anexe uma cópia da sua conta de luz</small>
+              <span class="input-button">Selecionar</span>
+            </label>
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label class="full">Melhor forma para contato:</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="email">
+              <span>E-mail</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="telefone">
+              <span>Telefone</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="celular">
+              <span>Celular</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="whatsapp">
+              <span>Whatsapp</span>
+            </label>
+          </div>
+        </div>
+
+        <label for="scene-1" class="btn btn-warning">Voltar</label>
+        <button class="btn btn-warning">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="assets/components/jquery/dist/jquery.min.js"></script>
+  <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- PLUGINS -->
+  <link rel="stylesheet" href="assets/components/OwlCarouselBower/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/components/OwlCarouselBower/owl-carousel/owl.transitions.css">
+  <script src="assets/components/OwlCarouselBower/owl-carousel/owl.carousel.min.js"></script>
+
+  <script src="assets/components/remodal/dist/remodal.min.js"></script>
+  <script src="assets/scripts/home.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async="async" defer="defer"></script>
+</body>
+</html>
