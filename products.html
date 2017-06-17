@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="theme-color" content="#205790"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Boost boilerplate"/>
+
+  <title>Balfar Solar</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles/app.css">
+  <link rel="stylesheet" href="assets/styles/products.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+      Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+  <![endif]-->
+
+  <header class="main-header">
+    <div class="header-superior hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="header-users col-sm-10">
+            <a href="#">Cadastre-se</a>
+          </div><!-- /.header-users -->
+
+          <div class="header-social col-sm-2 text-right">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+          </div><!-- /.header-social -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.header-superior -->
+
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".collapse">
+            <span class="fa fa-bars"></span>
+          </button>
+
+          <a class="navbar-brand">
+            <img class="hidden-xs" src="assets/images/logo.png" alt="Balfar Solar">
+            <img class="visible-xs" src="assets/images/logo-white.png" alt="Balfar Solar">
+          </a>
+
+          <a class="navbar-cart visible-xs" href="#"><span class="fa fa-shopping-cart"></span></a>
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#">Calcule sua energia</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="navbar-meta">
+              <a href="#"><span class="fa fa-shopping-cart"></span></a>
+              <a href="#"><span class="fa fa-search"></span></a>
+            </li>
+          </ul><!-- /.nav navbar-nav -->
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.navbar navbar-default -->
+  </header><!-- /.main-header -->
+
+  <main class="main-content" role="main">
+    <div class="row page-header">
+      <div class="col-sm-12">
+        <h1>Produtos</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ol class="breadcrumb">
+            <li><a href="#" title="Início">Início</a></li>
+            <li class="active">Produtos</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row">
+        <aside class="col-sm-3 sidebar">
+          <nav class="sidebar-section">
+            <h3 class="section-title">Categorias</h3>
+
+            <ul>
+              <li><a class="active" href="#" title="Promoção">Promoção</a></li>
+              <li><a href="#" title="Painéis">Painéis</a></li>
+              <li><a href="#" title="KIT">KIT</a></li>
+              <li><a href="#" title="Inversores">Inversores</a></li>
+              <li><a href="#" title="Estruturas">Estruturas</a></li>
+              <li><a href="#" title="Bombas Solares">Bombas Solares</a></li>
+              <li><a href="#" title="Outros">Outros</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="col-sm-9 content">
+          <div class="row content-header">
+            <div class="col-sm-3">
+              <h2 class="content-title">Destaques</h2>
+            </div>
+
+            <form class="col-sm-9 form-inline filters">
+              <div class="form-group">
+                <label>Produtos por página:</label>
+                <select>
+                  <option selected>12</option>
+                  <option>24</option>
+                  <option>48</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Odernar por:</label>
+                <select>
+                  <option selected>Popular</option>
+                  <option>Mair preço</option>
+                  <option>Menor preço</option>
+                </select>
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="product-item">
+                <figure class="product-cover">
+                  <img class="product-image" src="assets/images/produto.jpg" alt="Nome do produto">
+                </figure>
+                <h4 class="product-title">KIT 1.56 KWP</h4>
+                <a href="#" class="product-see">Ver detalhes</a>
+                <a href="#" class="product-buy">Adicionar ao orçamento</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="col-sm-2">
+        <div class="footer-logo">
+          <a class="logo" href="#">
+            <img src="assets/images/logo-white.png" alt="Balfar Solar">
+          </a>
+          <div class="footer-social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+          </div><!-- /.footer-social -->
+        </div><!-- /.footer-logo -->
+      </div><!-- /.col-sm-2 -->
+
+      <div class="col-sm-3">
+        <nav class="footer-navigation">
+          <a href="#">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Produtos</a>
+          <a href="#">Dúvidas</a>
+          <a href="#">Calcule sua energia</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
+        </nav><!-- /.footer-navigation -->
+      </div><!-- /.col-sm-2 -->
+
+      <div class="col-sm-7 text-right">
+        <div class="footer-meta">
+          <div class="footer-contact pull-right">
+            <p class="text-uppercase">Br 376 KM 109 S/N, Paranvaí, PR, Brasil</p>
+            <p class="footer-phone"><a href="#" class="footer-contact"><small>+55 44</small> 3029-3655</a></p>
+          </div><!-- /.addr-box -->
+          <form action="" class="footer-newsletter">
+            <label>Cadastre-se na nossa newsletter</label>
+            <div class="form-inline">
+              <input class="form-control" type="email" />
+              <button class="btn btn-warning" type="submit">enviar</button>
+            </div><!-- /.form-group -->
+          </form><!-- /.footer-newsletter -->
+        </div><!-- /.footer-meta -->
+      </div><!-- /.col-sm-7 -->
+    </div><!-- /.container -->
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; <span>Balfar Solar</span> - Todos os direitos reservados</p>
+        <a class="brand" href="//alohaagencia.com.br" target="_blank">AloHa</a>
+      </div><!-- /.container -->
+    </div><!-- /.copyright -->
+  </footer>
+
+  <div class="search-mask">
+    <section class="search">
+      <div class="container">
+        <form action="#" class="search-form">
+          <input class="search-input" placeholder="O que você está procurando?" />
+          <button class="search-close"><span>&times;</span></button>
+        </form><!-- /.search-form -->
+
+        <div class="search-results">
+          <ul class="search-list">
+            <li class="title"><strong>Produto</strong></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+
+            <li class="title"><strong>Produto</strong></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+            <li><a href="#">Nome do produto</a></li>
+          </ul>
+        </div><!-- /.search-results -->
+      </div><!-- /.container -->
+    </section><!-- /.search -->
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="assets/components/jquery/dist/jquery.min.js"></script>
+  <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- PLUGINS -->
+  <link rel="stylesheet" href="assets/components/OwlCarouselBower/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/components/OwlCarouselBower/owl-carousel/owl.transitions.css">
+  <script src="assets/components/OwlCarouselBower/owl-carousel/owl.carousel.min.js"></script>
+
+  <script src="assets/scripts/home.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async="async" defer="defer"></script>
+</body>
+</html>

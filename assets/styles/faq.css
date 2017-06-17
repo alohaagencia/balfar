@@ -1,0 +1,53 @@
+.page-header {
+  margin: 0;
+  background: url("../images/page-title.jpg") center no-repeat;
+  background-size: cover;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.breadcrumb {
+  margin: 0 auto;
+  padding: 50px 0;
+  background: transparent;
+}
+.breadcrumb li a,
+.breadcrumb .active {
+  font-size: 1.2em;
+  color: #0b355f;
+}
+.breadcrumb .active {
+  font-weight: bold;
+}
+.faq {
+  margin-bottom: 25px;
+}
+.faq-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid #205790;
+  background-color: #205790;
+}
+.faq-reply {
+  padding: 15px;
+  display: none;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=faq.css.map */

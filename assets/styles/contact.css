@@ -1,0 +1,188 @@
+.page-header {
+  margin: 0;
+  background: url("../images/page-title.jpg") center no-repeat;
+  background-size: cover;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.breadcrumb {
+  margin: 0 auto;
+  padding: 50px 0;
+  background: transparent;
+}
+.breadcrumb li a,
+.breadcrumb .active {
+  font-size: 1.2em;
+  color: #0b355f;
+}
+.breadcrumb .active {
+  font-weight: bold;
+}
+.form-group label {
+  font-weight: 100;
+  color: #222;
+}
+.form-control:not([type="checkbox"]):not([type="radio"]):not(.input-newsletter) {
+  box-shadow: none;
+  border-radius: 0;
+}
+.form-control:not([type="checkbox"]):not([type="radio"]):not(.input-newsletter):focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-warning {
+  border-color: #ff9e0f;
+  background-color: #ff9e0f;
+}
+.btn-warning:hover {
+  border-color: #e68900;
+  background-color: #e68900;
+}
+.checkbox-inline {
+  margin-right: 15px;
+  vertical-align: text-top;
+}
+.checkbox-inline input {
+  width: 15px;
+  height: 15px;
+}
+.form-upload input {
+  display: none;
+}
+.input-replacement {
+  width: 100%;
+  display: flex;
+  padding-left: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 35px;
+  border: 1px solid #ddd;
+}
+.input-replacement .input-button {
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #666;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+.input-replacement small {
+  color: #999;
+}
+.contact-infobox {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-infobox {
+    flex-direction: row;
+  }
+}
+.contact-infobox h4 {
+  color: #777;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .contact-infobox h4 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.contact-box {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact-box {
+    width: 33.33333333333333%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.contact-box p,
+.contact-box a {
+  margin: 0;
+}
+.contact-box a {
+  display: block;
+  color: #333;
+}
+.contact-box a:hover {
+  text-decoration: underline;
+}
+.form-contact {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #ddd;
+}
+.form-contact h2 {
+  margin-top: 0;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  padding-right: 15px;
+  font-weight: 700;
+  color: #205790;
+}
+.form-contact textarea {
+  height: 181px;
+}
+.contact-places {
+  position: relative;
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact-places {
+    padding-bottom: 50px;
+  }
+}
+.contact-places h2 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #205790;
+}
+.addresses {
+  height: 300px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+.addresses p {
+  margin: 0;
+  color: #205790;
+}
+.addr {
+  display: block;
+  margin-bottom: 15px;
+}
+.maps {
+  height: 358px;
+  display: block;
+  background-color: #205790;
+}
+@media screen and (min-width: 768px) {
+  .maps {
+    right: 0;
+    top: 50px;
+    position: absolute;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
