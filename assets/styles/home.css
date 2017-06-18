@@ -188,7 +188,7 @@
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-.about a {
+.about .about-more {
   width: 35px;
   height: 35px;
   display: block;
@@ -209,10 +209,22 @@
   right: 0;
   position: absolute;
   padding: 0;
-}
-.about-video iframe {
-  width: 100%;
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repat;
+  background-position: center;
+}
+.about-video a {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+  background: rgba(0,0,0,0.5) url("../images/icons/play.png") center no-repeat;
+}
+.about-video a:hover {
+  background-color: rgba(0,0,0,0.35);
 }
 .products-carousel {
   padding-top: 50px;
@@ -247,6 +259,11 @@
   float: left;
   width: calc(100% - 80px);
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .products-list.owl-carousel {
+    width: calc(100% - 130px);
+  }
+}
 @media screen and (min-width: 1024px) {
   .products-list.owl-carousel {
     width: calc(100% - 210px);
@@ -258,11 +275,6 @@
   display: block;
   overflow: hidden;
   border: 1px solid #ddd;
-}
-@media screen and (min-width: 768px) {
-  .product-carousel-item {
-    margin: 0 15px;
-  }
 }
 .product-carousel-item img {
   display: block;
@@ -349,15 +361,23 @@
 @media screen and (min-width: 600px) {
   .products-all.btn-warning {
     width: auto;
-    margin-right: 30px;
+    margin-right: 55px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .products-all.btn-warning {
+    margin-right: 45px;
+  }
+}
+.products-list .owl-item {
+  padding: 0 15px;
 }
 .home-clients {
   width: 100%;
   display: flex;
   padding-top: 15px;
   align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
   justify-content: center;
 }
 .home-clients img {
@@ -395,17 +415,6 @@
 .testimonials .testimony strong {
   font-size: 1.2em;
 }
-.siema-button {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid #fff;
-}
-.siema-button.active {
-  background-color: #fff;
-}
 .owl-controls .owl-page {
   margin: 30px 3px 0;
   display: inline-block;
@@ -439,6 +448,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.home-blog .news.half {
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .home-blog .news {
@@ -500,7 +512,6 @@
 .home-blog .news-resume {
   display: block;
   padding-top: 15px;
-  padding-bottom: 15px;
   line-height: 1.5;
   font-size: 1.2em;
   color: #fff;
@@ -522,5 +533,21 @@
   color: #fff;
   border-radius: 50%;
   border: 1px solid #fff;
+}
+.news.half h4 {
+  font-size: 1.5em;
+}
+.news.half .news-resume {
+  font-size: 1em;
+  line-height: 1.2;
+}
+@media screen and (min-width: 800px) {
+  .news.half h4 {
+    font-size: 2em;
+  }
+  .news.half .news-resume {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=home.css.map */

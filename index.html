@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="theme-color" content="#205790"/>
+  <meta name="theme-color" content="#0b355f"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Boost boilerplate"/>
 
@@ -18,7 +18,7 @@
 <body>
   <!--[if lt IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
-      Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.
+      Please <a href="/browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
   <![endif]-->
 
@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="header-users col-sm-10">
-            <a href="#">Cadastre-se</a>
+            <a href="register.html">Cadastre-se</a>
           </div><!-- /.header-users -->
 
           <div class="header-social col-sm-2 text-right">
@@ -45,7 +45,7 @@
             <span class="fa fa-bars"></span>
           </button>
 
-          <a class="navbar-brand">
+          <a class="navbar-brand" href="">
             <img class="hidden-xs" src="assets/images/logo.png" alt="Balfar Solar">
             <img class="visible-xs" src="assets/images/logo-white.png" alt="Balfar Solar">
           </a>
@@ -55,15 +55,15 @@
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Dúvidas</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a href="faq.html">Dúvidas</a></li>
             <li><a href="#modal">Calcule sua energia</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contato</a></li>
             <li class="navbar-meta">
-              <a class="item-cart" href="#"><span class="fa fa-shopping-cart"></span></a>
+              <a class="item-cart" href="cart.html"><span class="fa fa-shopping-cart"></span></a>
               <a class="item-search" href="#"><span class="fa fa-search"></span></a>
             </li>
           </ul><!-- /.nav navbar-nav -->
@@ -173,12 +173,13 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quibusdam consequatur, eveniet a repellat dolore illo itaque deserunt eum molestiae. Nemo culpa fugiat, qui sunt!
           </p>
 
-          <a class="about-more" href="#">+</a>
+          <a class="about-more" href="about.html">+</a>
         </div><!-- /.about-resume -->
       </div><!-- /.container -->
 
-      <div class="about-video hidden-xs">
-        <iframe src="https://www.youtube.com/embed/z08Ti0JjBls" frameborder="0" controls="2" iv_load_policy="3" modestbranding="1" rel="0" showinfo="0" allowfullscreen></iframe>
+      <div class="about-video hidden-xs" style="background-image: url('assets/images/image-placeholder.jpg')">
+        <a id="play-button" href="#video-modal"></a>
+        <!-- <iframe src="https://www.youtube.com/embed/z08Ti0JjBls" frameborder="0" controls="2" iv_load_policy="3" modestbranding="1" rel="0" showinfo="0" allowfullscreen></iframe> -->
       </div><!-- /.about-video -->
     </section><!-- /.about -->
 
@@ -188,13 +189,13 @@
       <div class="container">
         <div class="row">
           <button class="products-control prev col-xs-1"><span class="fa fa-angle-left"></span></button>
-          <div class="products-list">
+          <div class="products-list col-xs-10">
             <div class="product-carousel-item">
               <figure>
                 <img src="assets/images/produto.jpg" alt="Nome do produto">
               </figure>
               <div class="product-slug">
-                <a href="#"><strong>Nome do produto</strong></a>
+                <a href="product.html"><strong>Nome do produto</strong></a>
               </div><!-- /.product-slug -->
             </div><!-- /.product-carousel-item -->
 
@@ -203,7 +204,7 @@
                 <img src="assets/images/produto.jpg" alt="Nome do produto">
               </figure>
               <div class="product-slug">
-                <a href="#"><strong>Nome do produto</strong></a>
+                <a href="product.html"><strong>Nome do produto</strong></a>
               </div><!-- /.product-slug -->
             </div><!-- /.product-carousel-item -->
 
@@ -212,7 +213,7 @@
                 <img src="assets/images/produto.jpg" alt="Nome do produto">
               </figure>
               <div class="product-slug">
-                <a href="#"><strong>Nome do produto</strong></a>
+                <a href="product.html"><strong>Nome do produto</strong></a>
               </div><!-- /.product-slug -->
             </div><!-- /.product-carousel-item -->
 
@@ -221,7 +222,7 @@
                 <img src="assets/images/produto.jpg" alt="Nome do produto">
               </figure>
               <div class="product-slug">
-                <a href="#"><strong>Nome do produto</strong></a>
+                <a href="product.html"><strong>Nome do produto</strong></a>
               </div><!-- /.product-slug -->
             </div><!-- /.product-carousel-item -->
           </div><!-- /.col-sm-10 -->
@@ -232,7 +233,7 @@
       <div class="container">
         <div class="row">
           <div class="btn-row col-sm-10 col-sm-offset-1 text-right">
-            <a class="products-all btn btn-warning" href="#">ver todos</a>
+            <a class="products-all btn btn-warning" href="products.html">ver todos</a>
           </div><!-- /.col-sm-2 col-sm-offset-10 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -282,7 +283,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <a href="#">
+            <a href="notice.html">
               <div class="news" style="background-image: url('assets/images/banner.jpg')">
                 <div class="news-meta">
                   <div class="news-title">
@@ -304,7 +305,7 @@
           </div><!-- /.col-sm-6 -->
 
           <div class="col-sm-6">
-            <a href="#">
+            <a href="notice.html">
               <div class="news half" style="background-image: url('assets/images/banner.jpg')">
                 <div class="news-meta">
                   <div class="news-title">
@@ -323,7 +324,7 @@
               </div><!-- /.news -->
             </a>
 
-            <a href="#">
+            <a href="notice.html">
               <div class="news half" style="background-image: url('assets/images/banner.jpg')">
                 <div class="news-meta">
                   <div class="news-title">
@@ -350,7 +351,7 @@
     <div class="container">
       <div class="col-sm-2">
         <div class="footer-logo">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img src="assets/images/logo-white.png" alt="Balfar Solar">
           </a>
           <div class="footer-social">
@@ -360,15 +361,15 @@
         </div><!-- /.footer-logo -->
       </div><!-- /.col-sm-2 -->
 
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <nav class="footer-navigation">
-          <a href="#">Home</a>
-          <a href="#">Quem Somos</a>
-          <a href="#">Produtos</a>
-          <a href="#">Dúvidas</a>
-          <a href="#">Calcule sua energia</a>
-          <a href="#">Blog</a>
-          <a href="#">Contato</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">Quem Somos</a>
+          <a href="products.html">Produtos</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="#modal">Calcule sua energia</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contato</a>
         </nav><!-- /.footer-navigation -->
       </div><!-- /.col-sm-2 -->
 
@@ -378,7 +379,7 @@
             <p class="text-uppercase">Br 376 KM 109 S/N, Paranvaí, PR, Brasil</p>
             <p class="footer-phone"><a href="#" class="footer-contact"><small>+55 44</small> 3029-3655</a></p>
           </div><!-- /.addr-box -->
-          <form action="" class="footer-newsletter">
+          <form action="https://httpbin.org/" class="footer-newsletter" method="post">
             <label>Cadastre-se na nossa newsletter</label>
             <div class="form-inline">
               <input class="form-control input-newsletter" type="email" />
@@ -392,7 +393,7 @@
     <div class="copyright">
       <div class="container">
         <p>&copy; <span>Balfar Solar</span> - Todos os direitos reservados</p>
-        <a class="brand" href="//alohaagencia.com.br" target="_blank">AloHa</a>
+        <a class="brand" href="/alohaagencia.com.br" target="_blank">AloHa</a>
       </div><!-- /.container -->
     </div><!-- /.copyright -->
   </footer>
@@ -525,7 +526,14 @@
     </form>
   </div>
 
+  <!-- MODAL DE VÍDEO -->
+  <div class="remodal remodal-video" data-remodal-id="video-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <iframe id="video" src="https://www.youtube.com/embed/1E5WTK-76BU?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+  </div><!-- /.remodal -->
+
   <!-- SCRIPTS -->
+  <script src="//www.youtube.com/player_api"></script>
   <script src="assets/components/jquery/dist/jquery.min.js"></script>
   <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -534,7 +542,11 @@
   <link rel="stylesheet" href="assets/components/OwlCarouselBower/owl-carousel/owl.transitions.css">
   <script src="assets/components/OwlCarouselBower/owl-carousel/owl.carousel.min.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="assets/components/sweetalert2/dist/sweetalert2.min.css">
+  <script src="assets/components/sweetalert2/dist/sweetalert2.min.js"></script>
+
   <script src="assets/components/remodal/dist/remodal.min.js"></script>
+  <script src="assets/scripts/app.min.js"></script>
   <script src="assets/scripts/home.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

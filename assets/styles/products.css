@@ -14,8 +14,11 @@
 }
 .breadcrumb {
   margin: 0 auto;
-  padding: 50px 0;
+  padding-bottom: 50px;
   background: transparent;
+}
+.breadcrumb.spaces {
+  padding: 50px 0;
 }
 .breadcrumb li a,
 .breadcrumb .active {
@@ -80,6 +83,7 @@
 }
 .product-buy,
 .product-see {
+  position: relative;
   display: block;
   padding: 7px 0;
   font-size: 1em;
@@ -97,6 +101,32 @@
 .product-see:hover {
   color: #fff;
   background-color: #00ac5c;
+}
+.product-buy.is-loading,
+.product-see.is-loading {
+  color: transparent;
+  border-color: #0a63c1;
+  background-color: #0a63c1;
+}
+.product-buy.has-error,
+.product-see.has-error {
+  border-color: #ff6347;
+  background-color: #ff6347;
+}
+.product-buy.is-loading::before,
+.product-see.is-loading::before {
+  width: 25px;
+  height: 25px;
+  content: '';
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
 }
 .product-see {
   margin-bottom: 5px;

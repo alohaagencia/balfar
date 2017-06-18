@@ -25,10 +25,40 @@
   box-shadow: none;
 }
 .btn {
+  position: relative;
+  width: 100%;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.btn.is-loading {
+  color: transparent;
+  border-color: #0a63c1;
+  background-color: #0a63c1;
+}
+.btn.has-error {
+  border-color: #ff6347;
+  background-color: #ff6347;
+}
+.btn.is-loading::before {
+  width: 25px;
+  height: 25px;
+  content: '';
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
 }
 .btn-warning {
   border-color: #ff9e0f;
@@ -42,12 +72,21 @@
   margin-right: 15px;
   vertical-align: text-top;
 }
+@media screen and (max-width: 600px) {
+  .checkbox-inline {
+    display: block !important;
+    margin-left: 0 !important;
+  }
+}
 .checkbox-inline input {
   width: 15px;
   height: 15px;
 }
 .form-upload input {
   display: none;
+}
+.form-inline .btn {
+  width: auto;
 }
 .input-replacement {
   width: 100%;
@@ -57,6 +96,7 @@
   justify-content: flex-start;
   line-height: 35px;
   border: 1px solid #ddd;
+  background: url("../images/icons/upload.png") 15px center no-repeat;
 }
 .input-replacement .input-button {
   margin-left: auto;
@@ -64,11 +104,23 @@
   padding-right: 25px;
   color: #666;
   line-height: 35px;
+  text-align: center;
   text-transform: uppercase;
   background-color: #ddd;
 }
+@media screen and (max-width: 600px) {
+  .input-replacement .input-button {
+    width: calc(100% - 5px);
+  }
+}
 .input-replacement small {
+  display: none;
   color: #999;
+}
+@media screen and (min-width: 600px) {
+  .input-replacement small {
+    display: initial;
+  }
 }
 .login {
   display: flex;

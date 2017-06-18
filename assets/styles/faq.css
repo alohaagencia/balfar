@@ -14,8 +14,11 @@
 }
 .breadcrumb {
   margin: 0 auto;
-  padding: 50px 0;
+  padding-bottom: 50px;
   background: transparent;
+}
+.breadcrumb.spaces {
+  padding: 50px 0;
 }
 .breadcrumb li a,
 .breadcrumb .active {
@@ -35,15 +38,16 @@
 .faq-question {
   width: 100%;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   align-items: center;
   justify-content: space-between;
-  line-height: 35px;
   color: #fff;
   border-radius: 15px;
   border: 1px solid #205790;
   background-color: #205790;
+}
+.faq-question strong {
+  text-align: left;
 }
 .faq-reply {
   padding: 15px;

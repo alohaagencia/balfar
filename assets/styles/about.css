@@ -14,8 +14,11 @@
 }
 .breadcrumb {
   margin: 0 auto;
-  padding: 50px 0;
+  padding-bottom: 50px;
   background: transparent;
+}
+.breadcrumb.spaces {
+  padding: 50px 0;
 }
 .breadcrumb li a,
 .breadcrumb .active {
@@ -39,14 +42,31 @@
 .about-text h1 {
   margin-top: 0;
 }
-.about-video iframe {
+.about-video {
   width: 100%;
   height: 60vw;
+  position: relative;
   display: block;
   margin: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-video > a {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  background: rgba(0,0,0,0.5) url("../images/icons/play.png") center no-repeat;
+  transition: all 0.2s;
+}
+.about-video > a:hover {
+  background-color: rgba(0,0,0,0.35);
 }
 @media screen and (min-width: 768px) {
-  .about-video iframe {
+  .about-video {
     height: 32vw;
   }
 }
@@ -66,5 +86,25 @@
 .about-clients img {
   display: block;
   max-width: 100%;
+}
+.owl-controls {
+  bottom: 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.owl-controls .owl-page {
+  margin: 30px 3px 0;
+  display: inline-block;
+}
+.owl-controls .owl-page.active span {
+  background-color: #fff;
+}
+.owl-controls span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 /*# sourceMappingURL=about.css.map */

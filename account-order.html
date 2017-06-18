@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="theme-color" content="#205790"/>
+  <meta name="theme-color" content="#0b355f"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Boost boilerplate"/>
 
@@ -10,13 +10,15 @@
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/components/remodal/dist/remodal.css">
+  <link rel="stylesheet" href="assets/components/remodal/dist/remodal-default-theme.css">
   <link rel="stylesheet" href="assets/styles/app.css">
   <link rel="stylesheet" href="assets/styles/account.css">
 </head>
 <body>
   <!--[if lt IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
-      Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.
+      Please <a href="/browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
   <![endif]-->
 
@@ -25,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="header-users col-sm-10">
-            <a href="#">Cadastre-se</a>
+            <a href="register.html">Cadastre-se</a>
           </div><!-- /.header-users -->
 
           <div class="header-social col-sm-2 text-right">
@@ -43,7 +45,7 @@
             <span class="fa fa-bars"></span>
           </button>
 
-          <a class="navbar-brand">
+          <a class="navbar-brand" href="">
             <img class="hidden-xs" src="assets/images/logo.png" alt="Balfar Solar">
             <img class="visible-xs" src="assets/images/logo-white.png" alt="Balfar Solar">
           </a>
@@ -53,15 +55,15 @@
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Dúvidas</a></li>
-            <li><a href="#">Calcule sua energia</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contato</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a href="faq.html">Dúvidas</a></li>
+            <li><a href="#modal">Calcule sua energia</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contato</a></li>
             <li class="navbar-meta">
-              <a class="item-cart" href="#"><span class="fa fa-shopping-cart"></span></a>
+              <a class="item-cart" href="cart.html"><span class="fa fa-shopping-cart"></span></a>
               <a class="item-search" href="#"><span class="fa fa-search"></span></a>
             </li>
           </ul><!-- /.nav navbar-nav -->
@@ -107,43 +109,41 @@
           <h2 class="content-title">Produtos</h2>
 
           <div class="order-container">
-            <div class="table-responsive">
-              <table class="products" cellpadding="0" cellspacing="0">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Valor Unitário</th>
-                    <th>Valor Total</th>
-                  </tr>
-                </thead>
+            <table class="products" cellpadding="0" cellspacing="0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Produto</th>
+                  <th>Quantidade</th>
+                  <th>Valor Unitário</th>
+                  <th>Valor Total</th>
+                </tr>
+              </thead>
 
-                <tbody>
-                  <tr>
-                    <td><span>1</span></td>
-                    <td>Produto Batata</td>
-                    <td>2</td>
-                    <td>R$ 100,00</td>
-                    <td>R$ 100,00</td>
-                  </tr>
-                  <tr>
-                    <td><span>2</span></td>
-                    <td>Produto Batata</td>
-                    <td>2</td>
-                    <td>R$ 100,00</td>
-                    <td>R$ 100,00</td>
-                  </tr>
-                  <tr>
-                    <td><span>3</span></td>
-                    <td>Produto Batata</td>
-                    <td>2</td>
-                    <td>R$ 100,00</td>
-                    <td>R$ 100,00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+              <tbody>
+                <tr>
+                  <td><span>1</span></td>
+                  <td>Produto Batata</td>
+                  <td>2</td>
+                  <td>R$ 100,00</td>
+                  <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                  <td><span>2</span></td>
+                  <td>Produto Batata</td>
+                  <td>2</td>
+                  <td>R$ 100,00</td>
+                  <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                  <td><span>3</span></td>
+                  <td>Produto Batata</td>
+                  <td>2</td>
+                  <td>R$ 100,00</td>
+                  <td>R$ 100,00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@
     <div class="container">
       <div class="col-sm-2">
         <div class="footer-logo">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img src="assets/images/logo-white.png" alt="Balfar Solar">
           </a>
           <div class="footer-social">
@@ -164,15 +164,15 @@
         </div><!-- /.footer-logo -->
       </div><!-- /.col-sm-2 -->
 
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden-xs">
         <nav class="footer-navigation">
-          <a href="#">Home</a>
-          <a href="#">Quem Somos</a>
-          <a href="#">Produtos</a>
-          <a href="#">Dúvidas</a>
-          <a href="#">Calcule sua energia</a>
-          <a href="#">Blog</a>
-          <a href="#">Contato</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">Quem Somos</a>
+          <a href="products.html">Produtos</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="#modal">Calcule sua energia</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contato</a>
         </nav><!-- /.footer-navigation -->
       </div><!-- /.col-sm-2 -->
 
@@ -185,7 +185,7 @@
           <form action="" class="footer-newsletter">
             <label>Cadastre-se na nossa newsletter</label>
             <div class="form-inline">
-              <input class="form-control" type="email" />
+              <input class="form-control input-newsletter" type="email" />
               <button class="btn btn-warning" type="submit">enviar</button>
             </div><!-- /.form-group -->
           </form><!-- /.footer-newsletter -->
@@ -196,7 +196,7 @@
     <div class="copyright">
       <div class="container">
         <p>&copy; <span>Balfar Solar</span> - Todos os direitos reservados</p>
-        <a class="brand" href="//alohaagencia.com.br" target="_blank">AloHa</a>
+        <a class="brand" href="/alohaagencia.com.br" target="_blank">AloHa</a>
       </div><!-- /.container -->
     </div><!-- /.copyright -->
   </footer>
@@ -226,9 +226,115 @@
     </section><!-- /.search -->
   </div>
 
+  <!-- MODAL DE ENERGIA -->
+  <div class="remodal" data-remodal-id="modal">
+    <div class="md-header">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h1 class="text-center text-upeprcase">Calcule sua energia</h1>
+    </div>
+
+    <form action="">
+      <input class="modal-ctrl" id="scene-1" type="radio" name="modal-ctrl" checked hidden>
+      <div class="md-content">
+        <div class="input-group">
+          <label>Qual o consumo elétrico <strong>neste mês?</strong></label>
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <span class="btn btn-default">KW/h</span>
+          </span>
+        </div>
+
+        <div class="input-group">
+          <label>Quanto custou sua conta de luz <strong>neste mês?</strong></label>
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <span class="btn btn-default">R$</span>
+          </span>
+        </div>
+
+        <label class="btn btn-warning" for="scene-2">Próximo</label>
+      </div>
+
+      <input class="modal-ctrl" id="scene-2" type="radio" name="modal-ctrl" hidden>
+      <div class="md-content">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label>Nome:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Telefone:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>E-mail:</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Cidade:</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label class="full">Tipo de fatura:</label>
+            <label class="radio-inline">
+              <input type="radio" name="fatura" value="residencial">
+              <span>Residencial</span>
+            </label>
+
+            <label class="radio-inline">
+              <input type="radio" name="fatura" value="empresarial">
+              <span>Empresarial</span>
+            </label>
+          </div>
+
+          <div class="form-group form-upload col-sm-12">
+            <input id="files" type="file" hidden>
+            <label for="files" class="input-replacement">
+              <small>Anexe uma cópia da sua conta de luz</small>
+              <span class="input-button">Selecionar</span>
+            </label>
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label class="full">Melhor forma para contato:</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="email">
+              <span>E-mail</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="telefone">
+              <span>Telefone</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="celular">
+              <span>Celular</span>
+            </label>
+
+            <label class="checkbox-inline">
+              <input type="checkbox" name="fatura" value="whatsapp">
+              <span>Whatsapp</span>
+            </label>
+          </div>
+        </div>
+
+        <label for="scene-1" class="btn btn-warning">Voltar</label>
+        <button class="btn btn-warning">Enviar</button>
+      </div>
+    </form>
+  </div>
+
   <!-- SCRIPTS -->
   <script src="assets/components/jquery/dist/jquery.min.js"></script>
   <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- PLUGINS -->
+  <script src="assets/components/remodal/dist/remodal.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
