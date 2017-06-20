@@ -23,7 +23,7 @@
 .breadcrumb li a,
 .breadcrumb .active {
   font-size: 1.2em;
-  color: #0b355f;
+  color: #205790;
 }
 .breadcrumb .active {
   font-weight: bold;
@@ -245,15 +245,22 @@
   }
 }
 .ps__scrollbar-y-rail {
-  opacity: 1 !important;
+  right: 15px !important;
+  width: 7px !important;
   border-radius: 5px;
   background-color: #205790 !important;
   overflow: initial;
+  opacity: 1 !important;
+}
+.ps__scrollbar-y-rail:hover .ps__scrollbar-y,
+.ps__scrollbar-y-rail:hover .ps__scrollbar-y:hover {
+  width: 11px !important;
 }
 .ps__scrollbar-y {
+  width: 11px !important;
   margin-top: 5px;
-  right: 5px !important;
-  background-color: #0b355f !important;
+  right: -2px !important;
+  background-color: #666 !important;
 }
 .ps__scrollbar-y:hover,
 .ps__scrollbar-y:focus,

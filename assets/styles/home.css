@@ -29,7 +29,7 @@
   position: absolute;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(11,53,95,0.75);
+  background-color: rgba(32,87,144,0.75);
 }
 @media screen and (min-width: 768px) {
   .banner-text {
@@ -110,7 +110,7 @@
   margin-bottom: 50px;
   font-weight: 100;
   text-align: center;
-  color: #0b355f;
+  color: #205790;
   text-transform: uppercase;
 }
 .why > .container {
@@ -123,7 +123,7 @@
 .why .item img {
   height: 50px;
   display: block;
-  margin: 15px auto;
+  margin: 45px auto;
 }
 .why .item-text {
   padding-left: 15px;
@@ -177,7 +177,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #0b355f;
+  background-color: #205790;
 }
 .about h2,
 .about p,
@@ -234,14 +234,14 @@
   display: table;
   margin: 0 auto 50px;
   font-weight: 100;
-  color: #0b355f;
+  color: #205790;
   text-transform: uppercase;
 }
 .products-control {
   display: block;
   margin-top: 100px;
   font-size: 4rem;
-  color: #0b355f;
+  color: #205790;
   border: none;
   background-color: transparent;
 }
@@ -306,7 +306,7 @@
   display: flex;
   align-items: flex-end;
   transition: all 0.2s;
-  background-color: rgba(11,53,95,0.75);
+  background-color: rgba(32,87,144,0.75);
 }
 @media screen and (min-width: 1024px) {
   .product-slug {
@@ -319,9 +319,9 @@
 }
 .product-slug a {
   width: 100%;
-  padding: 15px;
+  padding: 7px 15px;
   text-align: center;
-  color: #0b355f;
+  color: #205790;
   text-transform: uppercase;
   background-color: #fff;
 }
@@ -398,7 +398,7 @@
   display: block;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #0b355f;
+  background-color: #205790;
 }
 .testimonials .container {
   display: block;
@@ -433,9 +433,16 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.home-blog h2 {
+  display: table;
+  margin: 0 auto 50px;
+  font-weight: 100;
+  color: #205790;
+  text-transform: uppercase;
+}
 .home-blog .title {
   margin: 0 auto 50px;
-  color: #0b355f;
+  color: #205790;
 }
 .home-blog .news {
   position: relative;
@@ -469,7 +476,7 @@
   left: 0;
   position: absolute;
   display: block;
-  background-color: rgba(11,53,95,0.75);
+  background-color: rgba(32,87,144,0.75);
 }
 .home-blog .news-title {
   width: 100%;
@@ -549,5 +556,13 @@
     font-size: 1.2em;
     line-height: 1.5;
   }
+}
+.has-border::after {
+  content: '';
+  width: 80%;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+  background-color: #205790;
 }
 /*# sourceMappingURL=home.css.map */

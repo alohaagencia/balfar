@@ -117,7 +117,7 @@ textarea {
   border-bottom: 1px dotted currentColor;
 }
 .main-header {
-  background-color: #0b355f;
+  background-color: #205790;
 }
 @media screen and (min-width: 768px) {
   .main-header {
@@ -132,7 +132,7 @@ textarea {
   display: inline-block;
   font-weight: 300;
   line-height: 45px;
-  color: #0b355f;
+  color: #205790;
   text-transform: uppercase;
 }
 .header-users a:hover {
@@ -149,11 +149,11 @@ textarea {
   line-height: 25px;
   text-align: center;
   color: #fff;
-  background-color: #0b355f;
+  background-color: #205790;
   border-radius: 50%;
 }
 .header-social a:hover {
-  background-color: #115395;
+  background-color: #2970b9;
 }
 .navbar-default {
   border: none;
@@ -173,7 +173,7 @@ textarea {
   height: 4px;
   display: block;
   transition: all 0.2s;
-  background-color: #0b355f;
+  background-color: #205790;
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 1.1em;
@@ -190,7 +190,7 @@ textarea {
   .navbar-default .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
-    color: #0b355f;
+    color: #205790;
   }
 }
 .navbar-default .navbar-nav > li.active a,
@@ -207,7 +207,7 @@ textarea {
   .navbar-default .navbar-nav > li.active > a,
   .navbar-default .navbar-nav > li:hover > a:hover,
   .navbar-default .navbar-nav > li.active > a:hover {
-    color: #0b355f;
+    color: #205790;
     background-color: transparent;
   }
 }
@@ -297,7 +297,7 @@ textarea {
   font-size: 1.4em;
   line-height: 30px;
   text-align: center;
-  color: #0b355f;
+  color: #205790;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -314,21 +314,20 @@ textarea {
   .footer-meta {
     display: flex;
     height: 290px;
+    padding-bottom: 30px;
     align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: right;
   }
 }
 .footer-navigation {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .footer-navigation a {
   display: block;
-  line-height: 2;
-  font-size: 1.2em;
+  line-height: 2.5;
+  font-size: 1.1em;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -340,7 +339,7 @@ textarea {
   }
 }
 .footer-navigation a:hover {
-  color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.7);
 }
 .footer-contact {
   width: 100%;
@@ -349,19 +348,26 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .footer-contact {
-    max-width: 300px;
+    max-width: 350px;
+    margin-bottom: 0;
   }
 }
 .footer-contact p {
   width: 100%;
-  font-size: 2em;
+  font-size: 2.2em;
+  font-weight: 700;
 }
 .footer-contact a {
   width: 100%;
 }
 .footer-contact small {
-  margin-right: 5px;
-  font-size: 0.7em;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.5em;
+}
+.footer-phone a:hover {
+  color: rgba(255,255,255,0.7);
 }
 .footer-newsletter {
   width: 100%;
@@ -370,7 +376,7 @@ textarea {
 }
 .footer-newsletter label {
   font-weight: 100;
-  font-size: 1.4em;
+  font-size: 1.7em;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -382,6 +388,7 @@ textarea {
 }
 .footer-newsletter input,
 .footer-newsletter button {
+  height: 45px;
   margin-left: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -402,7 +409,7 @@ textarea {
 }
 .footer-newsletter input {
   margin-left: 0;
-  max-width: 390px;
+  max-width: 470px;
   display: inline-block;
   width: calc(100% - 130px) !important;
 }
@@ -435,6 +442,7 @@ textarea {
   padding-bottom: 10px;
   color: #666;
   text-align: center;
+  font-size: 1.4em;
 }
 .copyright > .container span {
   text-transform: uppercase;
@@ -524,7 +532,13 @@ textarea {
 }
 .brand {
   color: #666 !important;
-  font: 1.2em/1.5 'Lasting Love';
+  font-family: 'Lasting Love';
+  font-size: 1.7em !important;
+}
+@media screen and (min-width: 768px) {
+  .brand {
+    padding-right: 15px;
+  }
 }
 .form-group label {
   font-weight: 100;
@@ -647,7 +661,7 @@ textarea {
 .remodal form label:not(.btn) {
   font-size: 1.2em;
   font-weight: 400;
-  color: #0b355f;
+  color: #205790;
 }
 .remodal .input-group,
 .remodal .form-group {

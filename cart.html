@@ -86,15 +86,15 @@
           <thead>
             <tr>
               <th colspan="2">Produto</th>
-              <th class="text-center">Preço</th>
+              <!-- <th class="text-center">Preço</th> -->
               <th class="text-center">Quantidade</th>
-              <th class="text-center">Total</th>
+              <!-- <th class="text-center">Total</th> -->
               <th></th>
             </tr>
           </thead>
 
           <tbody>
-            <tr>
+            <tr data-product='{"name": "As Crônicas de Narnia", "quantitie": 1, "value": 16.9, "cart": 16.9}'>
               <td>
                 <figure>
                   <a href="product.html" title="Nome do produto">
@@ -102,33 +102,34 @@
                   </a>
                 </figure>
               </td>
-              <td>
+              <td class="product-name">
                 <a href="product.html">
-                  <strong>Nome do produto</strong>
+                  <strong>As Crônicas de Narnia</strong>
                   <small>REF:. 71628327</small>
                 </a>
               </td>
-              <td>
-                <p>R$ 1.500,12</p>
-              </td>
+             <!--  <td>
+                <p>R$ 16,90</p>
+              </td> -->
               <td class="product-quantities">
-                <button class="product-decrease" type="button">
+                <a href="rota-diminui/1" class="product-decrease" data-value="-1">
                   <span class="fa fa-minus-circle"></span>
-                </button>
-                <input type="text" name="quantitie">
-                <button class="product-increase" type="button">
+                </a>
+                <input type="text" name="quantitie" value="1">
+                <a href="rota-aumenta/1" class="product-increase" data-value="1">
                   <span class="fa fa-plus-circle"></span>
-                </button>
+                </a>
               </td>
-              <td>
-                <p>R$ 15.500,00</p>
-              </td>
+              <!-- <td>
+                <p>R$ 16,90</p>
+              </td> -->
               <td class="remove-item">
-                <button class="product-remove" type="button"><span class="fa fa-times-circle"></span></button>
+                <!-- A Rota deve ser a rota/id -->
+                <a href="remove-produto/1" class="product-remove" type="button"><span class="fa fa-times-circle"></span></a>
               </td>
             </tr>
 
-            <tr>
+            <tr data-product='{"name": "As Crônicas de Gelo e Fogo", "quantitie": 1, "value": 25.0, "cart": 25.0}'>
               <td>
                 <figure>
                   <a href="product.html" title="Nome do produto">
@@ -136,37 +137,37 @@
                   </a>
                 </figure>
               </td>
-              <td>
+              <td class="product-name">
                 <a href="product.html">
-                  <strong>Nome do produto</strong>
+                  <strong>As Crônicas de Gelo e Fogo</strong>
                   <small>REF:. 71628327</small>
                 </a>
               </td>
-              <td>
-                <p>R$ 1.500,12</p>
-              </td>
+              <!-- <td>
+                <p>R$ 25,00</p>
+              </td> -->
               <td class="product-quantities">
-                <button class="product-decrease" type="button">
+                <a href="rota-diminui/1" class="product-decrease">
                   <span class="fa fa-minus-circle"></span>
-                </button>
-                <input type="text" name="quantitie">
-                <button class="product-increase" type="button">
+                </a>
+                <input type="text" name="quantitie" value="1">
+                <a href="rota-aumenta/1" class="product-increase">
                   <span class="fa fa-plus-circle"></span>
-                </button>
+                </a>
               </td>
-              <td>
-                <p>R$ 15.500,00</p>
-              </td>
+              <!-- <td>
+                <p>R$ 25,00</p>
+              </td> -->
               <td class="remove-item">
-                <button class="product-remove" type="button"><span class="fa fa-times-circle"></span></button>
+                <a href="remove-produto/1" class="product-remove"><span class="fa fa-times-circle"></span></a>
               </td>
             </tr>
           </tbody>
         </table>
 
         <div class="row">
-          <div class="col-sm-12 text-right cart-total">
-            <strong>Total: R$ 10.000,00</strong>
+          <!-- <div class="col-sm-12 text-right cart-total" data-cart-value="41.9">
+            <strong>Total: R$ 41,90</strong>
           </div><!-- /.col-sm-12 -->
           <div class="col-sm-12 text-right cart-end">
             <a href="#">Escolher mais produtos</a>
@@ -363,6 +364,12 @@
 
   <!-- PLUGINS -->
   <script src="assets/components/remodal/dist/remodal.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/components/sweetalert2/dist/sweetalert2.min.css">
+  <script src="assets/components/sweetalert2/dist/sweetalert2.min.js"></script>
+
+  <script src="assets/scripts/app.min.js"></script>
+  <script src="assets/scripts/cart.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

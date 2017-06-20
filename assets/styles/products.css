@@ -23,7 +23,7 @@
 .breadcrumb li a,
 .breadcrumb .active {
   font-size: 1.2em;
-  color: #0b355f;
+  color: #205790;
 }
 .breadcrumb .active {
   font-weight: bold;
@@ -60,7 +60,7 @@
   font-weight: 700;
 }
 .sidebar ul a:hover {
-  color: #0b355f;
+  color: #205790;
   background-color: rgba(32,87,144,0.05);
 }
 .product-item {
@@ -95,12 +95,12 @@
   text-transform: uppercase;
   border-radius: 5px;
   transition: all 0.2s;
-  background: #00ca6c;
+  background: #3cba68;
 }
 .product-buy:hover,
 .product-see:hover {
   color: #fff;
-  background-color: #00ac5c;
+  background-color: #339e58;
 }
 .product-buy.is-loading,
 .product-see.is-loading {
